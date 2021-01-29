@@ -1,0 +1,170 @@
+* , 
+::before, 
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+#Portfolio {
+  padding: 1.5rem;
+  text-align: center;
+  background-color:#333;
+  color:#fff;
+}
+
+header {
+  text-shadow: 1px 4px 2px rgba(0,0,0,0.1);
+}
+.header-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  animation: anime 3s ease-in-out;
+}
+
+.header-text h2 {
+  color:#666;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#header-img {
+  background: url(/images/jay_screationz-20210129-0001.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+  animation: anime 3s ease-in-out;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  border: 1px #ddd solid;
+  outline: none;
+  margin: 2rem O;
+  border-radius: 40px;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.3);
+  background-color: black;
+}
+
+.btn a,
+.btn i {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-right: .5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
+.btn:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+:root {
+  --facebook: #1877f2;
+  --instagram: #c32aa3;
+  --twitter: #1da1f2;
+}
+
+#Contact .fa-facebook {
+  color: var(--facebook);
+}
+
+#Contact .fa-instagram {
+  color: var(--instagram);
+}
+
+#Contact .fa-twitter {
+  color: var(--twitter);
+}
+
+#Contact {
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  background-color: #333;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+#Contact h3 {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+#Contact div {
+  padding: 0.25rem 0;
+}
+
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    height: 100%;
+  }
+
+  .header-text {
+    height: 100vh;
+  }
+
+  #header-img {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
